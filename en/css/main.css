@@ -1,0 +1,218 @@
+@charset "UTF-8";
+html, body {
+	margin: 0;
+	padding: 0;
+}
+div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd, address, blockquote {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+}
+#header {
+	margin-bottom: 1em;
+	border-bottom: 2px solid #630;
+}
+p {
+	margin-bottom: 1em;	
+}
+#footer {
+	line-height: 50px;
+	text-align: center;
+	background: #630;
+	color: white;
+	font-size: 0.8em;
+	padding: 0em;
+	margin: 20px auto;
+}
+#footer a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #CC9;
+	display: inline-block;
+}
+
+#header h1 {
+	color: #663300;
+	font: normal 3em Georgia, "Times New Roman", serif;
+}
+#header h2 {
+	margin-bottom: 0.5em;
+	font-size: 1.4em;
+}
+.alignLeft {
+	float: left;
+	padding-right: 1em;
+}
+dt {
+	color: #663300;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+dd {
+	margin-bottom: 1em;
+}
+.gallery img {
+	display: block;
+	margin: 0 auto;
+}
+.caption {
+	font-style: italic;
+	text-align: right;
+	margin-right: 1em;
+}
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 88.0326%;
+	padding-left: 1.4836%;
+	padding-right: 1.4836%;
+	clear: none;
+	float: none;
+}
+#mainContent {
+	width: 100%;
+}
+#interview {
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+}
+#artwork {
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+}
+#footer p a {
+	display:block;
+	line-height: .8em;
+}
+.zeroMargin_mobile {
+	margin-left: 0;
+}
+.hide_mobile {
+	display: none;
+}
+
+
+
+@media screen and (min-width:481px), screen and (max-width:800px) and (orientation:landscape){
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+.gridContainer {
+	width: 91.4836%;
+	padding-left: 0.7581%;
+	padding-right: 0.7581%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#mainContent {
+	width: 49.1712%;
+}
+#interview {
+	width: 49.1712%;
+	margin-left: 1.6574%;
+	clear: none;
+}
+#artwork {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+}
+.hide_tablet {
+	display: none;
+}
+.zeroMargin_tablet {
+	margin-left: 0;
+}
+.gallery {
+	width: 47.5%;
+	float: left;
+}
+#artwork div:nth-child(odd) {
+	margin-right: 5%;
+}
+#footer p a {
+	display: inline !important;
+	line-height: inherit !important;
+}
+#footer p a:first-child:before {
+	content: '\A';
+	white-space: pre;
+}
+}
+
+@media screen and (min-width:769px){
+	/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+.gridContainer {
+	width: 89.0217%;
+	max-width: 1232px;
+	padding-left: 0.4891%;
+	padding-right: 0.4891%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#mainContent {
+	width: 32.6007%;
+}
+#interview {
+	width: 32.6007%;
+	margin-left: 1.0989%;
+	clear: none;
+}
+#artwork {
+	width: 32.6007%;
+	clear: none;
+	margin-left: 1.0989%;
+}
+.zeroMargin_desktop {
+	margin-left: 0;
+}
+.hide_desktop {
+	display: none;
+}
+#footer p a:first-child:before {
+	content: '';
+	white-space: normal;
+}
+}
+
+@media screen and (max-width:320px){
+#header h1 {
+	font-size: 2em;
+}
+}
+
